@@ -14,8 +14,9 @@
 .navbar-text {
   position: relative;
   margin: auto;
-  display: flex;
+  display: inline-block;
   flex-direction: row;
+  margin: 10px;
 }
 
 .App-link {
@@ -27,26 +28,13 @@
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
-}
-
-body {
-  background: radial-gradient(circle at bottom, rgb(1, 1, 75) 0, black 100%);
+  background: radial-gradient(circle at bottom, rgb(0, 0, 31) 0, black 100%);
   height: 100vh;
   overflow: hidden;
 }
 
 .space {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.space {
-  background: rgba(61, 0, 61, 0.1) center / 200px 200px round;
+  background: rgba(24, 0, 24, 0.1) center / 200px 200px round;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -272,4 +260,19 @@ body {
       white, 
       rgba(255, 255, 255, 0)
     );
+}
+
+#astronaut {
+  animation: rotation 35s infinite linear;
+  max-width: 20vh;
+  float: right;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
