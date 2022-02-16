@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Navbar';
 import astronaut from './Assets/astronaut.png'
+import satellite from './Assets/satellite.png'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div class="space stars2"></div>
         <div class="space stars3"></div>
         <img id='astronaut' src={astronaut} alt={astronaut}/>
+        <img id='satellite' src={satellite} alt={satellite}/>
     </div>
   );
 }

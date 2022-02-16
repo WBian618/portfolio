@@ -265,7 +265,8 @@ body {
 #astronaut {
   animation: rotation 35s infinite linear;
   max-width: 20vh;
-  float: right;
+  float: left;
+  margin: 40px;
 }
 
 @keyframes rotation {
@@ -274,5 +275,22 @@ body {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+#satellite {
+  max-width: 20vh;
+  position: absolute;
+  right: 9vh;
+  bottom: 8vh;
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
