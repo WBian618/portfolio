@@ -2,7 +2,7 @@ import React from 'react'
 
 function Intro() {
   return (
-    <div>Intro</div>
+    <div id='intro'>Intro</div>
   )
 }
 

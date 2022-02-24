@@ -10,13 +10,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
+        <Intro/>
       </header>
+      <div id='background'>
         <div class="space stars1"></div>
         <div class="space stars2"></div>
         <div class="space stars3"></div>
         <img id='astronaut' src={astronaut} alt={astronaut}/>
         <img id='satellite' src={satellite} alt={satellite}/>
-        <Intro/>
+        
+      </div>
+        
     </div>
   );
 }
